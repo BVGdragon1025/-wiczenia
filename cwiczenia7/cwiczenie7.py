@@ -14,7 +14,7 @@ for i in range(0, 6):
     if a not in tab_r:
         tab_r.append(a)
 
-
+print("Wylosowałem")
 print("Teraz wprowadź swoje liczby")
 for i in range(6):
     a = int(input("Wprowadź liczby (1-49): "))

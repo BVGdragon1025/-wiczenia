@@ -24,7 +24,7 @@ print()
 textr = reversed(text)
 print(textr)  # Drukuje miejsce w pamięci
 print()
-print(text[::-1])
+print(text[::-1])  # Drukuje tekst od tyłu, jak trzeba
 print()
 print(text.count("a"))
 print()

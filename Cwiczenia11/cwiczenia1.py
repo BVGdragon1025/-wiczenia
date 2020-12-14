@@ -5,6 +5,31 @@ tylko tego, kto drzwi te uchyli, ale i cały świat. A ponieważ nie brakuje tak
 owych drzwiach manipulują, kiedyś ktoś popełni błąd, a wówczas zagłada świata będzie
 przesądzona i nieuchronna. Magia jest zatem zemstą i orężem Chaosu. To, że po
 Koniunkcji Sfer ludzie nauczyli posługiwać się magią, jest przekleństwem i zgubą świata.
-Zgubą ludzkości. I tak jest. Ci, którzy uważają magię za Chaos, nie mylą się."""""
+Zgubą ludzkości. I tak jest. Ci, którzy uważają magię za Chaos, nie mylą się."""
 
 print(text)
+print()
+print(text.lower())
+print()
+print(text.swapcase())
+print()
+print(text.capitalize())
+print()
+print(text.replace(" ", "."))
+print()
+print(text.lstrip())
+print()
+print(text.rstrip())
+print()
+print(text.join(reversed(text)))
+print()
+print(text.count("a"))
+print()
+print(text.find("a"))
+print()
+print(text.isalnum())
+print()
+print(text.startswith("M"))
+print()
+print(text.endswith("."))
+

@@ -64,7 +64,7 @@ def quiz():
     points = 0
     for i in range(10):
         quest = random.randint(0, len(qstns)-1)
-        # Sprawdzenie czy pytanie już było
+        # Sprawdzenie czy pytanie już było (obecnie zepsute)
         if quest in repeat:
             quest = random.randint(0, len(qstns) - 1)
         else:

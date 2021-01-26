@@ -23,7 +23,8 @@ tuple_names = ("Baht", "Bitcoin", "Ngultrum", "Ugija",
                "monero")
 
 
-def menu():  # Menu dla użytkownika
+# Menu dla użytkownika
+def menu():
     print("Wybierz sposób przeliczania: ")
     print("[1] Dolary na inną walutę: ")
     print("[2] Inna waluta na dolary: ")
@@ -31,7 +32,8 @@ def menu():  # Menu dla użytkownika
     return choice
 
 
-def wybor(choice):  # Wybor typu przeliczenia
+# Wybor typu przeliczenia
+def wybor(choice):
 
     if choice == "1":
         print("Na jaką walutę: ")
@@ -45,7 +47,8 @@ def wybor(choice):  # Wybor typu przeliczenia
         conversion(choice, choice2)
 
 
-def print_choices():  # Wydruk wyborów, aby oszczędzić linijki
+# Wydruk wyborów, aby oszczędzić linijki
+def print_choices():
     print("[1] Baht Tajski ")
     print("[2] Bitcoin ")
     print("[3] Ngultrum ")
@@ -58,7 +61,8 @@ def print_choices():  # Wydruk wyborów, aby oszczędzić linijki
     print("[10] Monero ")
 
 
-def conversion(choice, choice2):  # Konwersja walut na podstawie wyboru sposobu konwersji
+# Konwersja walut na podstawie wyboru sposobu konwersji
+def conversion(choice, choice2):
     if choice == "1":
         dolar = int(input("Podaj ile dolarów: "))
         conv = dolar / tuple_conv[int(choice2)-1]

@@ -21,14 +21,14 @@ def menu():
 
 def days():
     # Timedelta ustawiona jest, aby pokazywać dzień do przodu
-    # (lub dzienń do tyłu, zależnie od działania)
+    # (lub dzień do tyłu, zależnie od działania)
     # Dzisiejsza data
     today = datetime.date.today()
     print("Dzisiaj mamy: ", today.strftime("%d-%m-%Y"))
     # Wyświetlenie wczorajszej daty
     yesterday = today - datetime.timedelta(days=1)
     print("Wczoraj mieliśmy: ", yesterday.strftime("%d-%m-%Y"))
-    # Wyświetlenie dzisiejszej daty
+    # Wyświetlenie jutrzejszej daty
     tommorrow = today + datetime.timedelta(days=1)
     print("Jutro będzie: ", tommorrow.strftime("%d-%m-%Y"))
 
@@ -47,7 +47,7 @@ def birthday():
     year = int(input("Podaj rok (liczbowo, pełny): "))
     full_date = datetime.date(year, month, day)
     dom = full_date.strftime("%A")
-    print("Urodziłeś się w: ",day_dict[dom])
+    print("Urodziłeś się w: ", day_dict[dom])
 
 
 def easter_day():

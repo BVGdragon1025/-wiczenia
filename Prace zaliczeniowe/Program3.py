@@ -1,6 +1,3 @@
-# Na ten moment popsute jest sprawdzanie czy pytanie już było. Właściwie działa, ale resetuje licznik.
-# Do poprawki
-
 import random
 
 # Krotka z pytaniami
@@ -48,21 +45,24 @@ answrs = ("Hypertext Markup Language",
 repeat = []
 
 
+# Main, który bardziej działa jak menu
 def main():
     print("Witaj w quizie!")
     print("Pamiętaj, aby odpowiedzi na pytania były napisane poprawnie")
     choice = input("Czy jesteś gotów? Tak lub Nie: ")
     if choice == "Tak" or choice.capitalize() == "Tak" or choice.lower() == "tak":
         quiz()
-        grade(quiz())
     else:
         print("Widzimy się więc wkrótce!")
 
 
+# Główna część quizu
 def quiz():
     # Licznik punktów
     points = 0
-    for i in range(10):
+    i = 10
+    # Ten while sprawia, że nie resetują mi się punkty.
+    while i != 0:
         quest = random.randint(0, len(qstns)-1)
         # Sprawdzenie czy pytanie już było (obecnie zepsute)
         if quest in repeat:
@@ -79,18 +79,20 @@ def quiz():
                 # Dodanie punktu
                 print("Dobra odpowiedź!, +1")
                 points += 1
-                print(points)
-                print(repeat)
+                i -= 1
+                # print(points)
+                # print(repeat)
             else:
-                print(points)
-                print(repeat)
+                # print(points)
+                # print(repeat)
+                i -= 1
                 print("Zła odpowiedź, lecimy dalej")
-    return points
+    grade(points)
 
 
 # Podliczenie punktów i wystawienie oceny
 def grade(points):
-    print(points)
+    print("Uzyskane punkty: ", points)
     if points <= 3:
         print("Ocena niedostateczna. Powodzenia następnym razem")
     elif 3 < points <= 5:

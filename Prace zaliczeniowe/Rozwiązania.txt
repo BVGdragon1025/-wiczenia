@@ -1,0 +1,38 @@
+Program 1:
+Wpadłem na to, kiedy przeglądałem Internet w poszukiwaniu kalkulatora. I znalazłem jedną stronkę
+z dokładnym wyjaśnieniem, co kiedy i jak odejmować. Więc zacząłem przepisywać dane, robić obliczenia i frustrować się
+na osobę, która wymyśliła system podatkowy w Polsce. Ostatecznie po kilku dniach przerwy napisałem to od nowa i działa.
+Link do strony:
+https://poradnikprzedsiebiorcy.pl/kalkulator-wynagrodzen
+
+Program 2:
+Analogicznie, ta sama strona. Tylko tym razem obliczenie tego było o wiele prostrze. Plus zrobiłem wersję tylko dla
+pracowników na pełnym etacie.
+
+Program 3:
+Początkowo chciałem zrobić słownik z kluczami. Ale ten pomysł okazał się niewypałem, ponieważ słowniki przecież
+nie mogą mieć takich samych wartości. Więc wpadłem na pomysł zrobienia dwóch krotek - jedna z pytaniami,
+druga z odpowiedziami. Kolejnym problemem były pytania - nie wiedziałem jakie pytania wymyślić.
+Obecnie problemem dla mnie jest usunięcie błędu powodującego resetowanie zdobytych punktów.
+
+Program 4:
+Podobnie jak przy pierwszym i drugim poszukałem czy coś takiego istnieje. I np. Seagate ma cały artykuł temu po święcony.
+Więc poczytałem i przeniosłem odpowiednią konwersję. Oczywiście wynik jest przybliżony.
+
+Program 5:
+Na pomysł z rozwiązaniem wpadłem w sumie przed zrobieniem zadania trzeciego. Początkowo chciałem aby użytkownik sam
+wybierał walutę, ale byłoby to zbyt długie. Więc zamiast tego zrobiłem wybór albo dolara na coś, albo czegoś na dolar.
+Tuple pomogły mi z formatowaniem, choć ze względu jak bardzo sobie komplikowałem sprawę sprawiło mi to troche problemu.
+Ale udało się i działa.
+
+Program 6:
+W sumie podobnie jak w 3 i 5 - poszukałem na Internecie odpowiednich liczb i wzorów na przeliczenie temperatury,
+przerobiłem przelicznik walut i wyszło, że od ma ponad 120 linijek. Pewnie dałoby się jakość to zmniejszyć, ale
+nie mam tyle czasu i po za tym program wykonuje swoje przeznaczenie.
+
+Program 7:
+Kiedy robiłem projekt na kółko informatyczne, poczytałem trochę więcej o datetime. Wiedza sie przydała i udało mi się
+napisać funkcję dla sprawdzenia co będzie jutro i dzisiaj oraz dla wskazania w jaki dzień się urodziłeś. Ale Wielkanoc
+była punktem, gdzie się poddałem i wykorzystałem gotową funkcję easter() z biblioteki dateutil. A próbowałem zrozumieć na
+jakiej zasadzie określa się kiedy Wielkanoc. Ale przeniesienie tego na kod było dla mnie zbyt dużym wyzwaniem, związanym
+z obliczaniem pojedyńczego dnia na podstawie absurdalnych danych.

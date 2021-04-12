@@ -20,7 +20,7 @@ class MusicDB:
         self.artist = input("Podaj nazwę wykonawcy: ")
         self.title = input("Podaj jego utwór: ")
 
-        conn.execute(f"INSERT INTO songs (ARTIST, TITLE) VALUES ({self.artist},{self.title});")
+        conn.execute(f"INSERT INTO songs (ARTIST, TITLE) VALUES ('{self.artist}','{self.title}');")
         print("Piosenka dodana!")
         conn.close()
 

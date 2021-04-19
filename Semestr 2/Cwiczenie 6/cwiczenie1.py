@@ -54,8 +54,7 @@ class YellowBook:
 
     def read_number(self):
         cursor = conn.execute("SELECT * FROM KONTAKTY;")
-        result = cursor.fetchall()
-        for row in result:
+        for row in cursor:
             print(row)
 
     def delete_number(self):

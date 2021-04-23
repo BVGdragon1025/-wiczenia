@@ -34,4 +34,5 @@ class YellowPages:
                 export_contact.write(key + " " + value)
 
     def sort_contacts(self):
+        pass
 

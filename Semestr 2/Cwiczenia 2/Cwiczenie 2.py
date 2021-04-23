@@ -1,7 +1,8 @@
 import time
 
+
 class Zwierze:
-    def __init__(self,ile_nog,kolor,wiek,czy_grozne,zyje_w_polsce,czy_udomowione,czy_glodny):
+    def __init__(self,ile_nog, kolor, wiek, czy_grozne, zyje_w_polsce, czy_udomowione, czy_glodny):
         self.ile_nog = ile_nog
         self.kolor = kolor
         self.wiek = wiek
@@ -10,9 +11,10 @@ class Zwierze:
         self.czy_udomowione = czy_udomowione
         self.czy_glodny = czy_glodny
 
+
 class Kot(Zwierze):
-    def __init__(self,rasa,nazwa,ile_zyc):
-        super().__init__()
+    def __init__(self,rasa, nazwa, ile_zyc, ile_nog, kolor, wiek, czy_grozne, zyje_w_polsce, czy_udomowiene, czy_glodny):
+        super().__init__(ile_nog, kolor, wiek, czy_grozne, zyje_w_polsce, czy_udomowiene, czy_glodny)
         self.rasa = rasa
         self.nazwa = nazwa
         self.ile_zyc = ile_zyc

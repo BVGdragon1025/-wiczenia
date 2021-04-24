@@ -83,9 +83,9 @@ class CoffeShop(Restaurant):
 
 class Main:
     def __init__(self):
-        self.__lokalneRestauracje = []
+        self.lokalneRestauracje = []
         lodziarnia = IceCreamStand("Fabryka lodów", 123456789, 987654321, "Lodziarnia", 40, 8, 4, False, IceCreamStand.flavour)
-        self.__lokalneRestauracje.append(lodziarnia)
+        self.lokalneRestauracje.append(lodziarnia)
 
     def AddRestaurant(self):
         nazwa = input("Podaj nazwe nowej restauracji ")
@@ -99,17 +99,14 @@ class Main:
         if specjalizacja.capitalize() == "Lodziarnia":
             newRestaurant = IceCreamStand(nazwa, NIP, REGON, adres, specjalizacja, powierzchnia, stoliki, dowoz,
                                           IceCreamStand.flavour)
-            self.__lokalneRestauracje.append(newRestaurant)
+            self.lokalneRestauracje.append(newRestaurant)
         elif specjalizacja.capitalize() == "Kawiarnia":
             newRestaurant = CoffeShop(nazwa, NIP, REGON, adres, specjalizacja, powierzchnia, stoliki, dowoz, "lol",
                                       CoffeShop.coffeTypes)
-            self.__lokalneRestauracje.append(newRestaurant)
-
-
+            self.lokalneRestauracje.append(newRestaurant)
 
     def ShowLocalRestaurants(self):
-        repr(self.__lokalneRestauracje)
+        repr(self.lokalneRestauracje)
 
 
-
-Main().ShowLocalRestaurants()
+Main.ShowLocalRestaurants(Main)

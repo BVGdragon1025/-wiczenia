@@ -11,13 +11,17 @@ class Obywatel:
         self.city = city
 
     def add_person(self):
-        self.name = input("Podaj imię: ")
-        self.surname = input("Podaj imię: ")
-        self.street = input("Podaj ulicę: ")
-        self.street_num = int(input("Podaj numer mieszkania: "))
-        self.postal_code = input("Podaj kod pocztowy: ")
-        self.city = input("Podaj miasto: ")
-        print("Osoba dodana!")
+        how_much = int(input("Ile osób chcesz dodać?: "))
+        i = 0
+        while i != how_much:
+            self.name = input("Podaj imię: ")
+            self.surname = input("Podaj nazwiko: ")
+            self.street = input("Podaj ulicę: ")
+            self.street_num = int(input("Podaj numer mieszkania: "))
+            self.postal_code = input("Podaj kod pocztowy: ")
+            self.city = input("Podaj miasto: ")
+            print("Osoba dodana!")
+            i += 1
 
     def card(self):
         Obywatel.add_person(self)
@@ -49,5 +53,5 @@ class Obywatel:
 
 person1 = Obywatel("Dominik", "Nawrot", "Zmyślona", 28, "56-400", "Oleśnica")
 person1.card()
-Obywatel.card(Obywatel)
+Obywatel.card(person1)
 

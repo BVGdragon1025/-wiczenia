@@ -63,10 +63,17 @@ class MovieApp:
 
     def movie_show(self):
         print("Lista filmów w bazie: ")
+        print("ID:  Tytuł:      Reżyser:      Aktorzy:          Platforma:     ")
         for movies in session.query(Movies).join(Platforms).all():
             print(movies.id, movies.title, movies.director, movies.actors, movies.platforms.platform_name)
         print()
 
+    def movie_update(self):
+        MovieApp.movie_show(self)
+        choice = int(input("Wpisz ID filmu do edycji: "))
+        session.query(Movies).filter(Movies.id == choice).one()
+
 
 # MovieApp.movie_add(MovieApp)
-MovieApp.movie_show(MovieApp)
+# MovieApp.movie_show(MovieApp)
+MovieApp.movie_update(MovieApp)

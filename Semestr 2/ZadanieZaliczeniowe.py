@@ -9,7 +9,7 @@ class Osoba:
 
 class Dane(Osoba):
     def __init__(self, pesel, street, street_num):
-        super(Dane, self).__init__(self,self.__name, self.__surname)
+        super().__init__(self, self.__name)
         self.pesel = pesel
         self.street = street
         self.street_num = street_num

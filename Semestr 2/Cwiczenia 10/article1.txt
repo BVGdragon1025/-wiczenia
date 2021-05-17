@@ -1,0 +1,31 @@
+Jeśli korzystasz z WhatsAppa, to pewnie niezbyt cenisz sobie prywatność. Ale co innego pozwolić Facebookowi, czyli właścicielowi WhatsAppa, na śledzenie tego z kim i kiedy rozmawiasz, a co innego ujawniać to każdemu w internecie, prawda?
+
+Okazuje się, że za pomocą dostępnych za darmo narzędzi każdy może sprawdzić kiedy jesteś online. To może poważnie zagrozić Twojej prywatności (przykłady poniżej). Co więcej, twoją aktywność na WhatsAppie można nałożyć na aktywność innego użytkownika, co pozwala wnioskować, że być może właśnie z tą osobą na WhatsAppie rozmawiasz, jeśli okresy Waszych aktywności są zbieżne. Wynikające z tego zagrożenia dla niektórych mogą być bardzo poważne. I to z kilku powodów…
+
+Zmiana ustawień prywatności Cię nie zabezpieczy
+WhatsApp, czyli komunikator chwalący się “prywatnością w swoim DNA” przyznaje na swojej stronie, że domyślnie każdy użytkownik WhatsApp widzi:
+
+status “widziano”
+zdjęcie profilowe.
+sekcję “o mnie”
+potwierdzenie odczytania wiadomości
+
+Powyższe się da zmienić ustawieniami prywatności, ale problem w tym, że większość osób uważa, że zmiana tych ustawień tak,
+aby NIKT ich nie widział powoduje, że są bezpieczni. To nieprawda. WhatsApp w swojej dokumentacji (jeśli ktoś do niej w ogóle dotrze) ostrzega, że…
+
+Nie można ukryć statusu “aktywny(-a)” ani “pisze…”
+
+I to jest ogromny problem. Dlaczego? Każdy OSINT-owiec już pewnie się domyśla jak potężne może być taka wiedza…
+
+Dlaczego to jest problem?
+Z WhatsAppa korzysta wiele osób, a dzięki tej luce prywatnościowej pokazującej “jedynie” to kiedy ktoś jest online,
+można próbować ustalać siatkę kontaktów i powiązania danych osób, namierzać prawdziwą tożsamość (w przypadku osób anonimowych),
+a nawet typować lokalizację w której przebywają.
+
+Potencjalnych sytuacji, w których informacja o tym kiedy ktoś jest online może być przydatna i może powodować zagrożenie jest wiele. Pokażmy jedną:
+
+Wyobraźmy sobie następującą sytuację. Pracownik instytucji publicznej dostrzega jakieś nadużycie i daje o nim znać dziennikarzowi.
+Dziennikarz kontaktuje się z tą instytucją publiczną, aby uzyskać komentarz rzecznika prasowego.
+Dziennikarz podaje do kontaktu swój numer telefonu (to typowa praktyka).
+Dyrektor organizacji dostaje numer dziennikarza od rzecznika, ma też numery telefonów pracowników.
+Zaczyna sprawdzać, czy w ostatnich dniach czasy aktywności dziennikarza i pracowników przypadkiem się nie pokrywały.

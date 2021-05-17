@@ -1,0 +1,44 @@
+Od środy otrzymujemy zgłoszenia o tym, że posiadacze NAS-ów marki QNAP tracą dostęp do swoich danych.
+Winny jest QLOCKER, czyli internetowy robak, który szyfruje pliki i domaga się okupu.
+
+Qlocker sprawia, że niektóre pliki na NAS-ie stają się archiwami 7zip (rozszerzenie 7z), a dodatkowo pojawia się plik o nazwie !!!READ_ME.txt o następującej treści:
+
+"!!! All your files have been encrypted !!!
+All your files were encrypted using a private and unique key generated for the computer. This key is stored in our server and the only way to receive your key and decrypt your files is making a Bitcoin payment.
+To purchase your key and decrypt your files, please follow these steps:
+1. Dowload the Tor Browser at “https://www.torproject.org/”. If you need help, please Google for “access onion page”.
+2. Visit the following pages with the Tor Browser:
+gvka2m4qt5fod2fltkjmdk4gxh5oxemhpgmnmtjptms6fkgfzdd62tad.onion
+3. Enter your Client Key:"
+
+Od ofiar wymagana jest opłata 0.01 bitcoina (którego cena akurat nurkuje, więc trwa promocja!) czyli 2000 PLN. S
+trona działa i przestępcy przekazują poprawne klucze. Jeśli więc ktoś nie ma kopii bezpieczeństwa
+a zaszyfrowane dane są dla niego warte więcej niż 2000 PLN to …gratulujemy być może pierwszej w życiu transakcji bitcoinowej, jakiej zaraz dokona!
+
+Co ciekawe, w pierwszej wersji strony, jak informuje BleepingComputer znajdował się błąd
+i na podstawie ID transakcji jednej ofiary można było pozyskać klucz innych ofiar, ale przestępcy naprawili błąd.
+
+Czy tych ataków można było uniknąć?
+Specjalistów od bezpieczeństwa przyglądających się sprawie bulwersuje to,
+że Qlocker dostaje się na urządzenia poprzez dziurę, którą niezależni badacze zgłaszali QNAP-owi jeszcze w listopadzie 2020 roku.
+Ale producent dziurę załatał dopiero 16 kwietnia 2021 roku i to po tym, jak badacze nie wytrzymali i ujawnili publicznie informacje o błędzie…
+
+Najwcześniejszy sygnał o ataku mamy z 20 kwietnia, więc najwyraźniej tylko 3 dni zajęło atakującym “zreversowanie” patcha.
+To pokazuje, że szybkie wgrywanie poprawek bezpieczeństwa na urządzenia podpięte bezpośrednio do internetu to bardzo istotna kwestia.
+Podobnie jak odpowiedni hardening NAS-a. Nie zawsze jest potrzeba aby akurat ten moduł, który wykorzystano do włamania, był dostępny od strony internetu.
+Warto więc ograniczyć powierzchnię ataku i schować część usług NAS-ów za firewallem lub całkowicie je wyłączyć, jeśli z nich nie korzystamy.
+
+Moja firma została zaszfyrowana! Co robić, jak żyć?
+Jeśli zaszyfrowane dane są dla Ciebie istotne i nie masz backupu — pozostaje Ci zapłacić.
+Hasła są długie i ich łamanie póki co nie jest sensowną opcją.
+Jeśli zależy Ci na odzyskaniu tylko jednego pliku, możesz spróbować odzyskać dane narzędziami do forensica/filecarvingu, o ile nie zostały nadpisane.
+A jeśli zaszyfrowane dane nie są dla Ciebie istotne, to po prostu przywróć urządzenie do ustawień fabrycznych, zaktualizuj do najnowszej wersji
+i rozpocznij swoją przygodę z NAS-em na nowo.
+
+W obu przypadkach wykonaj też kopie bezpieczeństwa na przyszłość i zastanów się,
+czy dane do których dostęp miało złośliwe oprogramowanie nie zawierały danych osobowych klientów, kontrahentów lub pracowników.
+Bo jeśli takie dane wyciekły, to musisz jeszcze zgłosić incydent do PUODO i masz na to 72 godziny od momentu wykrycia zdarzenia.
+
+Tak… obsługa incydentu dotyczącego ataku ransomwarem to nigdy nie jest prosta sprawa.
+Temu tematowi poświęciliśmy dwugodzinny webinar “Zhackowali mnie, co teraz?“, który zawiera szereg praktycznych porad,
+zarówno dla zespołu IT (co robić po ataku? Jak nie dopuścić do kolejnego?) jak i dla prawników i Zarządu — właśnie ze względu na wspomniany wcześniej obowiązek zgłoszenia incydentu do PUODO.

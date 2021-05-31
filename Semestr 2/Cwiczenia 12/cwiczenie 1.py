@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import scrolledtext
 from tkinter.ttk import *
 
 window = Tk()
@@ -46,6 +47,10 @@ rad1.grid(column=0, row=3)
 rad2.grid(column=0, row=4)
 rad3.grid(column=0, row=5)
 btn2.grid(column=1, row=5)
+
+txt_area = scrolledtext.ScrolledText(window, width=40, height=10)
+txt_area.insert(INSERT, 'GUI to moja pasja')
+txt_area.grid(column=0, row=6)
 
 window.mainloop()
 
